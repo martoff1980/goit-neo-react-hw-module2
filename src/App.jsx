@@ -1,4 +1,5 @@
 import { useState, useEffect } from 'react';
+import Description from './components/description/Description';
 import Feedback from './components/feedback/Feedback';
 import Options from './components/options/Options';
 import Notification from './components/notification/Notification';
@@ -35,11 +36,7 @@ export default function App() {
 
   return (
     <div className="container">
-      <h1>Sip Happens Café</h1>
-      <p>
-        Please leave your feedback about our service by selecting one of the
-        options below.
-      </p>
+      <Description />
 
       <Options
         onLeaveFeedback={updateFeedback}
